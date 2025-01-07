@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        Choose Price: <input type="number" id="price" required>
+        Choose Dish: <input type="text" id="dish" required>
+        <select id="table" required>
+            <option value="" disabled selected>Choose Table</option>
+            <option value="t1">Table 1</option>
+            <option value="t2">Table 2</option>
+            <option value="t3">Table 3</option>
+        </select>
+        <button type="submit">Add to Bill</button>
+    </form>
+
+    <h1>Orders</h1>
+    <h3>Table 1</h3>
+    <ul id="list1"></ul>
+
+    <h3>Table 2</h3>
+    <ul id="list2"></ul>
+
+    <h3>Table 3</h3>
+    <ul id="list3"></ul>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="restro.js"></script>
+
+</html>
